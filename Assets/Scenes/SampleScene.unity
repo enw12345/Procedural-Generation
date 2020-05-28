@@ -256,15 +256,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2992601c9570247ac4384d85621cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  drawMode: 1
   mapWidth: 100
   mapHeight: 100
   noiseScale: 30
-  octaves: 4
+  octaves: 18
   persistance: 0.5
-  lacunarity: 3.16
-  seed: 145
+  lacunarity: 2.7
+  seed: 189
   offset: {x: 7.01, y: 3.32}
   autoUpdate: 1
+  regions:
+  - name: Deep Water
+    height: 0.25
+    color: {r: 0, g: 0.103946924, b: 1, a: 0}
+  - name: Shallow Water
+    height: 0.3
+    color: {r: 0, g: 0.75355816, b: 1, a: 0}
+  - name: Sand
+    height: 0.35
+    color: {r: 0.8555805, g: 0.8867924, b: 0.4224813, a: 0}
+  - name: Low Land
+    height: 0.4
+    color: {r: 0.3114648, g: 0.9433962, b: 0.21804914, a: 0}
+  - name: High Land
+    height: 0.5
+    color: {r: 0.00897705, g: 0.4245283, b: 0, a: 0}
+  - name: Low Mountain
+    height: 0.6
+    color: {r: 0.2924528, g: 0.2381443, b: 0.21658063, a: 0}
+  - name: Mid Mountain
+    height: 0.8
+    color: {r: 0.14150941, g: 0.10014923, b: 0.0727572, a: 0}
+  - name: High Mountain
+    height: 1
+    color: {r: 1, g: 1, b: 1, a: 0}
 --- !u!4 &712195432
 Transform:
   m_ObjectHideFlags: 0
